@@ -1,0 +1,24 @@
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+ 
+<div class=" container">
+ 
+<div style="color:red ;" *ngIf='invalidlogin'>{{errorMessage}}</div>
+ 
+<div style="color:blueviolet;">
+<h1>Welcome User!!!</h1>
+</div>
+<br><br><br>
+<div>
+Username: <input type="text" name="username" [(ngModel)]="username"/>
+<br><br>
+Password: <input type="password" name="password" [(ngModel)]="password"/>
+<br><br>
+<button class="btn btn-success" (click)=handlesignin()>Sign in</button>
+</div>
+<br><br>
+<p>
+<b>If you are a new user: </b>
+<button class="btn btn-warning" (click)=handlesignup()><b>New User</b></button>
+ 
+<p>
+</div>
